@@ -4,9 +4,9 @@ terraform {
       source  = "fluxcd/flux"
       version = "1.2.3"
     }
-    github = {
-      source  = "integrations/github"
-      version = "6.2.1"
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "2.30.0"
     }
   }
 }

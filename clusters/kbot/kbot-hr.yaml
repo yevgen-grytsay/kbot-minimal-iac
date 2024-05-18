@@ -1,0 +1,19 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta2
+kind: HelmRelease
+metadata:
+  name: kbot
+  namespace: kbot-otel
+spec:
+  chart:
+    spec:
+      chart: ./helm
+      reconcileStrategy: ChartVersion
+      # reconcileStrategy: Revision
+      sourceRef:
+        kind: GitRepository
+        name: kbot
+  interval: 1m0s
+  valuesFrom:
+    - kind: Secret
+      name: kbot-otel-helm-values
