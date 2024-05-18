@@ -15,5 +15,5 @@ spec:
         name: kbot
   interval: 1m0s
   valuesFrom:
-    - kind: Secret
-      name: kbot-otel-helm-values
+    - kind: ConfigMap
+      name: helm-values
