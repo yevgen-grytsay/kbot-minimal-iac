@@ -1,1 +1,1 @@
-# kbot-simple-iac
+# kbot-minimal-iac
