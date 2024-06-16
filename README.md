@@ -1,1 +1,1 @@
-# kbot-flux-otel-monitoring
+# kbot-simple-iac
